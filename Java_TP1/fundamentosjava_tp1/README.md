@@ -30,9 +30,9 @@ Caso a opção 2 seja escolhida, então o programa deve solicitar ao usuário o 
 
 Por exemplo, se o programa for executado informando as notas 5.5 e 7.5, então o programa deverá imprimir na tela:
 
-### - Nome do aluno: Beltrano
+** - Nome do aluno: Beltrano
 
-### - Nota da AV1: 5.5
+* - Nota da AV1: 5.5
 
 ### - Nota da AV2: 7.5
 
