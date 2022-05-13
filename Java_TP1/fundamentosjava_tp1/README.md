@@ -10,11 +10,11 @@ Para que o programa seja construído, você deverá instalar e configurar no seu
 ## Ao ser iniciado, o programa deve exibir um menu com as seguintes opções:
 
 
-###[1] Registrar as notas de um novo aluno.
-###[2] Consultar boletim de um aluno.
-###[3] Consultar notas da turma.
-###[4] Sair.
-###[0] Mais informações.
+ - [1] Registrar as notas de um novo aluno.
+ - [2] Consultar boletim de um aluno.
+ - [3] Consultar notas da turma.
+ - [4] Sair.
+ - [9] Mais informações.
 
 A estrutura de dados do programa consiste em três vetores com 100 posições cada. Isso quer dizer que o programa permite o registro de 100 alunos. Cada aluno possui um registro nos três vetores, acessados pelo mesmo índice.
 
