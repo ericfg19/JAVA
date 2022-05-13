@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\EricFG\Documents\SAFE_ZONE\Trabalhos_InfNet\Bloco JAVA\FUNDAMENTOS\Java_TP1\.metadata\.plugins\org.eclipse.jdt.core
+327056452.index
+1865797976.index
+3883950653.index
