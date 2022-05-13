@@ -30,15 +30,15 @@ Caso a opção 2 seja escolhida, então o programa deve solicitar ao usuário o 
 
 Por exemplo, se o programa for executado informando as notas 5.5 e 7.5, então o programa deverá imprimir na tela:
 
-** - Nome do aluno: Beltrano
+ - Nome do aluno: Beltrano
 
-* - Nota da AV1: 5.5
+ - Nota da AV1: 5.5
 
-### - Nota da AV2: 7.5
+ - Nota da AV2: 7.5
 
-### - Média final: 6.5
+ - Média final: 6.5
 
-### - Situação: Prova final
+ - Situação: Prova final
 
 Se a opção 3 for escolhida no menu do programa, então o programa deverá imprimir na tela todos os alunos, seguindo as mesmas condições para impressão do boletim, exceto pelo fato de que o programa não deve solicitar o código, já que vai imprimir todos os registros.
 
