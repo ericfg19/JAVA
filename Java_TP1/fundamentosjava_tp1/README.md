@@ -10,11 +10,11 @@ Para que o programa seja construído, você deverá instalar e configurar no seu
 ## Ao ser iniciado, o programa deve exibir um menu com as seguintes opções:
 
 
-###[1] Registrar as notas de um novo aluno.
-###[2] Consultar boletim de um aluno.
-###[3] Consultar notas da turma.
-###[4] Sair.
-###[0] Mais informações.
+ - [1] Registrar as notas de um novo aluno.
+ - [2] Consultar boletim de um aluno.
+ - [3] Consultar notas da turma.
+ - [4] Sair.
+ - [9] Mais informações.
 
 A estrutura de dados do programa consiste em três vetores com 100 posições cada. Isso quer dizer que o programa permite o registro de 100 alunos. Cada aluno possui um registro nos três vetores, acessados pelo mesmo índice.
 
@@ -30,15 +30,15 @@ Caso a opção 2 seja escolhida, então o programa deve solicitar ao usuário o 
 
 Por exemplo, se o programa for executado informando as notas 5.5 e 7.5, então o programa deverá imprimir na tela:
 
-### - Nome do aluno: Beltrano
+ - Nome do aluno: Beltrano
 
-### - Nota da AV1: 5.5
+ - Nota da AV1: 5.5
 
-### - Nota da AV2: 7.5
+ - Nota da AV2: 7.5
 
-### - Média final: 6.5
+ - Média final: 6.5
 
-### - Situação: Prova final
+ - Situação: Prova final
 
 Se a opção 3 for escolhida no menu do programa, então o programa deverá imprimir na tela todos os alunos, seguindo as mesmas condições para impressão do boletim, exceto pelo fato de que o programa não deve solicitar o código, já que vai imprimir todos os registros.
 
