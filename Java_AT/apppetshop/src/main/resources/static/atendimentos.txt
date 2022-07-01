@@ -1,0 +1,4 @@
+A;Atendimento Teste Padrão;true;Hurley;048151623-42;teste@teste.com;Shih-Tzu;
+1;Checkup;49.50;123;1;false;Exame periódico;
+2;Clinica Tijuca;199.50;456;1;false;Animal não possui uma pata;
+3;Banho e Tosa;80.50;789;1;true;Ter cuidado ao limpar a orelha
