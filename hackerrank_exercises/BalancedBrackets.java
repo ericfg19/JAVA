@@ -15,15 +15,28 @@ import static java.util.stream.Collectors.toList;
 class Result {
 
     /*
-     * Complete the 'utopianTree' function below.
+     * Complete the 'isBalanced' function below.
      *
-     * The function is expected to return an INTEGER.
-     * The function accepts INTEGER n as parameter.
+     * The function is expected to return a STRING.
+     * The function accepts STRING s as parameter.
      */
 
-    public static int utopianTree(int n) {
-        return (1 << ((n >> 1 ) +1 )) - 1 << n % 2;
-
+    public static String isBalanced(String s) {
+    // Write your code here
+        String open = "{[(";
+    String close = "}])";
+    Stack<Character> stack = new Stack<>();
+    for (Character c : s.toCharArray()) {
+        if (open.indexOf(c) >= 0) stack.push(c);
+        else {
+            if (stack.isEmpty()) return "NO";
+            if (open.indexOf(stack.peek()) == close.indexOf(c))
+                stack.pop();
+            else return "NO";
+        }
+    }
+    if (stack.isEmpty()) return "YES";
+    return "NO";
     }
 
 }
@@ -37,11 +50,11 @@ public class Solution {
 
         IntStream.range(0, t).forEach(tItr -> {
             try {
-                int n = Integer.parseInt(bufferedReader.readLine().trim());
+                String s = bufferedReader.readLine();
 
-                int result = Result.utopianTree(n);
+                String result = Result.isBalanced(s);
 
-                bufferedWriter.write(String.valueOf(result));
+                bufferedWriter.write(result);
                 bufferedWriter.newLine();
             } catch (IOException ex) {
                 throw new RuntimeException(ex);

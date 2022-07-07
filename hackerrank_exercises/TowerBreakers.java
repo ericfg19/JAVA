@@ -15,15 +15,17 @@ import static java.util.stream.Collectors.toList;
 class Result {
 
     /*
-     * Complete the 'utopianTree' function below.
+     * Complete the 'towerBreakers' function below.
      *
      * The function is expected to return an INTEGER.
-     * The function accepts INTEGER n as parameter.
+     * The function accepts following parameters:
+     *  1. INTEGER n
+     *  2. INTEGER m
      */
 
-    public static int utopianTree(int n) {
-        return (1 << ((n >> 1 ) +1 )) - 1 << n % 2;
-
+    public static int towerBreakers(int n, int m) {
+    // Write your code here
+        return (n%2 == 0 || m == 1 )?2 : 1;
     }
 
 }
@@ -37,9 +39,13 @@ public class Solution {
 
         IntStream.range(0, t).forEach(tItr -> {
             try {
-                int n = Integer.parseInt(bufferedReader.readLine().trim());
+                String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
 
-                int result = Result.utopianTree(n);
+                int n = Integer.parseInt(firstMultipleInput[0]);
+
+                int m = Integer.parseInt(firstMultipleInput[1]);
+
+                int result = Result.towerBreakers(n, m);
 
                 bufferedWriter.write(String.valueOf(result));
                 bufferedWriter.newLine();
@@ -52,3 +58,4 @@ public class Solution {
         bufferedWriter.close();
     }
 }
+

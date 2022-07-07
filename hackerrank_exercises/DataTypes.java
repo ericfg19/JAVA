@@ -1,4 +1,4 @@
-package Exercícios;
+package hckrnk_exercises;
 
 import java.util.*;
 import java.io.*;
