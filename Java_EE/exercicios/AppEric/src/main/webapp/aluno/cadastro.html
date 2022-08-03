@@ -5,6 +5,7 @@
 <title>Insert AppTeste Cadastro</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 	
 </head>
 <body>
@@ -12,7 +13,7 @@
 
 <!-- Receba o nome e o e-mail do aluno: use caixas de texto -->
 
-		<form action="aluno/confirmacao.html">
+		<form action="aluno" method="post">
 		
 			<div class="form-group">
 			
@@ -21,6 +22,15 @@
 			<input type="text" value="Eric FG" name="nome" class="form-control">
 			</div>
 			<hr>
+			
+			<div class="form-group">
+			
+			<label>Idade:</label>
+			
+			<input type="number" value="20" name="idade" class="form-control">
+			</div>
+			<hr>
+			
 			<div class="form-group">
 			
 			<label>Email:</label>
@@ -29,12 +39,20 @@
 			</div>
 			<hr>
 			
+			<div class="form-group">
+			
+			<label>Mensalidade:</label>
+			
+			<input type="number" value="600" name="mensalidade" class="form-control">
+			</div>
+			<hr>
+			
 	<!-- Selecione o curso que o aluno vai fazer: graduação, especialização, 
 	mestrado ou doutorado: use um radiobutton -->
 	
 			<div class="form-group">
 			
-			<label>Curso</label>
+			<label>Curso:</label>
 			
 			<input type="radio" name="curso" value="G"> Graduação
 			<input type="radio" name="curso" value="E"> Especialização
@@ -47,11 +65,18 @@
 			<div class="form-group">
 			
 			<label>Disciplinas:</label>
-			
-			<input type="checkbox" name="disciplinas"> Fundamentos do Desenvolvimento Java
-			<input type="checkbox" checked name="disciplinas"> Desenvolvimento Java Web
-			<input type="checkbox" checked name="disciplinas"> Programação Orientada a Objetos
-			<input type="checkbox" name="disciplinas"> Projeto de Bloco Java Cloud
+				<div class="checkbox">
+				<label><input type="checkbox" name="disciplinas" value="Fundamentos"> Fundamentos do Desenvolvimento Java</label>
+				</div>
+				<div class="checkbox">
+				<label><input type="checkbox" checked name="disciplinas" value="Desenvolvimento"> Desenvolvimento Java Web</label>
+				</div>
+				<div class="checkbox">
+				<label><input type="checkbox" checked name="disciplinas" value="POO"> Programação Orientada a Objetos</label>
+				</div>
+				<div class="checkbox">
+				<label><input type="checkbox" name="disciplinas" value="Cloud"> Projeto de Bloco Java Cloud</label>
+				</div>
 			</div>
 			<hr>
 			
