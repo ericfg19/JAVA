@@ -10,10 +10,29 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TesteController {
 
-	@RequestMapping(value="/{name}", method = RequestMethod.GET)
+	@RequestMapping(value="/{num1}/{opc}/{num2}", method = RequestMethod.GET)
 	@ResponseStatus(HttpStatus.OK)
-	public String X(@PathVariable String name) {
-		return " Hello " + name + " !";
+	public String greetingText(@PathVariable int num1, @PathVariable char opc, @PathVariable int num2) {
+		int result;
+		switch (opc) {
+			case '+': 	
+				result = num1 + num2;
+				break;
+			case '-': 	
+				result = num1 - num2;
+				break;
+			case '*':	
+				result = num1 * num2;
+				break;
+			case 'd':	
+				result = num1 / num2;
+				break;
+			default: 
+				result = -1;	
+			}
+	
+		return "O resultado é "+ result;
+		
 	}
 
 }
