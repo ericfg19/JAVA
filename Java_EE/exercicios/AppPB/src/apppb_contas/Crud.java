@@ -44,7 +44,13 @@ public class Crud {
 			return;
 		}
 		
+		if (contas.get(achou).getSaldo() != 0) {
+			System.out.println("Erro: Conta não zerada!\n");
+			return;
+		}
+		
 		contas.remove(achou);
+		System.out.println("Conta deletada!\n");
 		
 	}
 	
