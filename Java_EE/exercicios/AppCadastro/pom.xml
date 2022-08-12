@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.edu.infnet</groupId>
-	<artifactId>ericapp</artifactId>
+	<artifactId>AppCadastro</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ericapp</name>
 	<description>projeto Java web</description>
