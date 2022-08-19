@@ -10,8 +10,8 @@
 <body>
 	<div class="container">
 		<h3>Eric FG</h3>
-		<h4>Cadastro de <a href="/aluno">Aluno</a></h4>
-		<h4>Cadastro de <a href="/professor">Professor</a></h4>
+		<h4>Cadastro de <a href="/aluno/lista">Aluno</a></h4>
+		<h4>Cadastro de <a href="/professor/lista">Professor</a></h4>
 
 	</div>
 </body>
