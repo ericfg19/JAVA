@@ -11,7 +11,6 @@
 	<title>App - Cadastro</title>
 </head>
 <body>
-	<c:import url="/WEB-INF/jsp/menu.jsp"/>
 
 	<div class="container">
 		<h2>Cadastramento de alunos</h2>
