@@ -1,0 +1,44 @@
+#produto
+id			nome		valor		codigo
+1			suco		10			987
+2			peixe		30			345
+
+#bebida
+gelada		tamanho		marca
+true		289			dafruta
+
+#comida
+peso		vegano		ingredientes
+300			false		cebola e tomate
+
+1 ### tabelao ###
+
+TPRODUTO
+id			type	nome		valor		codigo		gelada		tamanho		marca		peso		vegano		ingredientes
+1			B		suco		10			987			true		289			dafruta		null		null		null
+2			C		peixe		30			345			null		null		null		300			false		cebola e tomate
+
+2 ### filhas ###
+
+TBEBIDA
+id			nome		valor		codigo		gelada		tamanho		marca
+1			suco		10			987			true		289			dafruta
+
+TCOMIDA
+id			nome		valor		codigo		peso		vegano		ingredientes
+2			peixe		30			345			300			false		cebola e tomate
+
+3 ### herança ###
+
+TPRODUTO
+id			nome		valor		codigo
+1			suco		10			987
+2			peixe		30			345
+
+TBEBIDA
+gelada		tamanho		marca				idProduto
+true		289			dafruta				1
+
+TCOMIDA
+peso		vegano		ingredientes		idProduto
+300			false		cebola e tomate		2
